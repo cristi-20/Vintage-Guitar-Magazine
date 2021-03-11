@@ -1,0 +1,229 @@
+/* Media Queries */
+@media (min-width: 768px) {
+  .nav-menu {
+    .nav-ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+// Lg Screens
+@media screen and (max-width: 1400px) {
+  /* Features */
+  .features {
+    .f-container {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+}
+
+// Md Screens
+@media screen and (max-width: 1024px) {
+  /* Main Logo */
+  .nav-logo-wrapper {
+    flex-direction: column;
+
+    .main_logo {
+      margin-bottom: 3rem;
+    }
+    // .nav-ul {
+    //   margin-bottom: 1rem;
+    //   display: flex;
+    // }
+  }
+
+  // Hero Section
+  .hero {
+    .hero-container {
+      flex-direction: column;
+      .lg-text {
+        h1 {
+          font-size: 7rem;
+        }
+      }
+
+      .lg-button-wrapper {
+        margin-top: 2rem;
+        height: 30vh;
+      }
+    }
+  }
+
+  // Modal Content
+  .myModal {
+    .modal-content {
+      flex-direction: column;
+      padding: 2rem;
+      width: 60%;
+      justify-content: center;
+
+      .modal-info {
+        width: 100%;
+        align-items: center;
+        margin: 1rem auto;
+
+        .show-p {
+          font-size: 1.3rem;
+          margin-bottom: 0.5rem;
+        }
+
+        h2 {
+          margin-bottom: 0.5rem;
+          font-size: 1.5rem;
+        }
+
+        .hidden {
+          font-size: 1.3rem;
+        }
+      }
+      .spinner-cart-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .modal-image {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
+// ================
+
+// Sm Screens
+@media screen and (max-width: 560px) {
+  .header {
+    .menu-btn {
+      display: inline-block;
+    }
+  }
+
+  .nav-logo-wrapper {
+    /* Main Logo */
+    .main_logo {
+      align-items: center;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+      width: 100%;
+      display: none;
+
+      .nav-ul {
+        text-align: center;
+
+        li {
+          margin: 0.6rem 0;
+          font-size: 1.6rem;
+
+          .nav-link {
+            width: 35%;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  /* Hero Section */
+  .hero {
+    .hero-container {
+      margin: 2rem 0;
+      .lg-text {
+        text-align: center;
+        h1 {
+          font-size: 3.5rem;
+
+          .fa-music {
+            top: 0;
+          }
+        }
+      }
+
+      .lg-button-wrapper {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  // Modal Content
+  .myModal {
+    .modal-content {
+      width: 90%;
+      .modal-info {
+        text-align: center;
+        .nice-number {
+          margin: 0.5rem 0;
+        }
+        .spinner-cart-wrapper {
+          margin: 0 auto;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  /* Features */
+  .features {
+    .features-wrapper {
+      grid-template-columns: 1fr;
+      .f-box {
+        flex-direction: column;
+        text-align: center;
+
+        .box-text {
+          margin: 0;
+        }
+
+        h3 {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  /* Subscription Field */
+  .subscription {
+    max-width: 70%;
+    .subscription-wrapper {
+      width: 100%;
+    }
+
+    form {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // My cart
+  .modal {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal-body {
+    width: 10%;
+  }
+  #my-cart-table {
+    width: 30%;
+  }
+}
