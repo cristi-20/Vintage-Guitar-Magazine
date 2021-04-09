@@ -1,10 +1,11 @@
 .nav-logo-wrapper {
+  
   .menu-btn {
     position: absolute;
     position: fixed;
-    z-index: 3;
+    z-index: 20;
     right: 35px;
-    top: 100px;
+    top: 25px;
     cursor: pointer;
     @include easeOut;
 
@@ -12,9 +13,12 @@
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
-      background: white;
+      background: $myColor;
       @include easeOut;
     }
+
+
+
     //   Rotate Into X With Menu Lines
     &.close {
       -webkit-transform: rotate(180deg);
@@ -24,42 +28,98 @@
       transform: translate(180deg);
 
       .btn-line {
+
         // Line 1 - Rotate
         &:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
+          -webkit-transform:rotate(45deg) translate(5px, 5px);
+          -moz-transform: rotate(45deg) translate(5px, 5px);
+          -o-transform:rotate(45deg) translate(5px, 5px);
+          -ms-transform:rotate(45deg) translate(5px, 5px);
         }
+
         // Line 2 - Hide
         &:nth-child(2) {
           opacity: 0;
         }
+
         // Line 3 - Rotate
 
         &:nth-child(3) {
           transform: rotate(-45deg) translate(6.5px, -6.5px);
+          -webkit-transform: rotate(-45deg) translate(6.5px, -6.5px);
+          -moz-transform: rotate(-45deg) translate(6.5px, -6.5px);
+          -o-transform: rotate(-45deg) translate(6.5px, -6.5px);
+          -ms-transform: rotate(-45deg) translate(6.5px, -6.5px);
         }
       }
     }
   }
 
-  .nav-menu {
-    .nav-ul {
-      .current:visited {
-        color: $myColor_1;
+  .menu {
+    visibility: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    top: 0;
+    padding: 2rem;
+    transform: translate(0, -600px);
+    -webkit-transform:  translate(0, -600px);
+    -moz-transform:  translate(0, -600px);
+    -o-transform:  translate(0, -600px);
+    -ms-transform:  translate(0, -600px);
+    @include easeOut;
+    z-index: 10;
+
+    &.show {
+      visibility: visible;
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      
+    }
+
+  &-ul {
+      @for $x from 1 through 4 {
+        .menu-item:nth-child(#{$x}) {
+          transition-delay: $x * 0.1s;
+        }
       }
 
-      .nav-link {
+      .current:visited {
+        color: $lightBlue;
+      }
+
+      .menu-link {
         font-weight: bold;
-        color: $myColor;
+        color: $blue;
         @include easeOut;
-        border-radius: 3px;
-        font-size: 1rem;
-        padding: 0.5rem 1.3rem;
-        background: $bg_color1;
-        margin-left: 1.5rem;
-        &:hover {
-          background: $hover;
-        }
+        font-size: 1.2rem;
+        padding-bottom: .2rem;
+
+      }
+    }
+
+    .menu-item {
+      transform: translate3d(600px, 0, 0);
+      -webkit-transform: translate3d(600px, 0, 0);
+      -moz-transform: translate3d(600px, 0, 0);
+      -o-transform: translate3d(600px, 0, 0);
+        -ms-transform: translate3d(600px, 0, 0);
+      @include easeOut;
+      margin-bottom: 1.3rem;
+      text-align: center;
+
+      &.show {
+        transform:translate(0, 0, 0);
+        -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
       }
     }
   }
 }
+

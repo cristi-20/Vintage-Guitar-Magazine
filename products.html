@@ -1,1073 +1,1750 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Animate -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../product landing page/scss/hover-min.css" />
+    <link rel="stylesheet" href="../product landing page/scss/hover.css" />
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
- <link rel="stylesheet" href="../product landing page/JS&Jquery/number spinner/jquery.nice-number.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/product landing page/scss/main.css"
+    />
 
- <link rel="stylesheet" type="text/css" href="/product landing page/scss/main.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/product landing page/scss/products.css"
+    />
 
- <link rel="stylesheet" type="text/css" href="/product landing page/scss/products.css">
- 
     <title>Product Landing Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-logo-wrapper">
+        <div class="main-logo animate__animated animate__fadeInLeft">
+          <a href="index.html">
+            <h1 class="logo">Vintage Guitar<span class="rts">&reg;</span></h1>
+          </a>
+          <span class="logo-subtitle">magazine</span>
+        </div>
 
-</head>
-<body>
+        <!-- Hamburger Menu -->
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
 
-   <header class="header">  
-       <!-- main logo -->
-       <div class="nav-logo-wrapper">
-        <div class="main_logo animate__animated animate__fadeInLeft">
-        <a href="index.html"><h1 class="logo">
-            Vintage Guitar<span class="rts">&reg;</span>
-        </h1>
-    </a>
-            <h2>
-         magazine 
-         </h2>    
-     </div>
-     <!-- Hamburger Menu -->
-<div class="menu-btn">
-    <div class="btn-line">
-    </div>
-    <div class="btn-line">
-    </div>
-    <div class="btn-line">
-    </div>
-</div>
-
-    <!-- navigation menu -->
-    <nav class="nav-menu animate__animated animate__fadeInRight">
-        <ul class="nav-ul">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    Home
-                </a>
+        <nav class="menu">
+          <ul class="menu-ul">
+            <li class="menu-item">
+              <a
+                class="menu-link hvr-underline-reveal current"
+                href="index.html"
+              >
+                Home
+              </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link current" href="products.html">
-            Products
-                </a>
+            <li class="menu-item">
+              <a class="menu-link hvr-underline-reveal" href="products.html">
+                Products
+              </a>
             </li>
-         <li class="nav-item">
-             <a class="nav-link" href="#features">
-                 About us
-             </a>
-         </li>
-         <li class="nav-item"><a class="nav-link" href="">
-        Pricing
-         </a></li>
-        </ul>
+            <li class="menu-item">
+              <a class="menu-link hvr-underline-reveal" href="about.html">
+                About us
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a class="menu-link hvr-underline-reveal" href=""> Pricing </a>
+            </li>
+          </ul>
         </nav>
-        <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
-            <span class="badge badge-notify my-cart-badge">
-            </span>
+        <div class="cart-icon">
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"> </span>
+          <span class="badge badge-notify my-cart-badge"> </span>
         </div>
-   </header>
+      </div>
+    </header>
 
-<!-- -p.Products -->
-   <section class="products">
-       <div class="products-container">
-           <!-- -i.Digital Drums 400 Compact Electronic Drum Kit Package Deal -->
+    <!-- -p.Products -->
+    <section class="products">
+      <div class="products-container">
+        <!-- -i.Digital Drums 400 Compact Electronic Drum Kit Package Deal -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal11" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-remove-bg.png">
-    
-        <h3 class="item-title">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal11"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Digital Drums 400 Compact Electronic Drum Kit Package Deal
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $219.99
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
-        </div>
+          </h3>
+
+          <div class="price-stock">
+            <p class="price">$219.99</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
 
         <!-- -i.PRS SE Tremonti Custom, Gray Black -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal12" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-remove-bg.png">
-    
-        <h3 class="item-title">
-            PRS SE Tremonti Custom, Gray Black
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $749.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
-        </div>
-        </div>
-<!-- -i.EVO By Audient EVO SRB Recording Pack -->
-        <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal13" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-remove-bg.png">
-    
-        <h3 class="item-title">
-            
-EVO By Audient EVO SRB Recording Pack
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal12"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
 
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $199.99
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">PRS SE Tremonti Custom, Gray Black</h3>
+
+          <div class="price-stock">
+            <p class="price">$749.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.Casio GP310 Grand Hybrid Digital Piano, Satin Black -->
+        <!-- -i.EVO By Audient EVO SRB Recording Pack -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal14" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Casio GP310 Piano/1-remove-bg.png">
-    
-        <h3 class="item-title">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal13"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">EVO By Audient EVO SRB Recording Pack</h3>
+
+          <div class="price-stock">
+            <p class="price">$199.99</p>
+            <p class="stock">18 in stock</p>
+          </div>
+        </div>
+        <!-- -i.Casio GP310 Grand Hybrid Digital Piano, Satin Black -->
+        <div class="item">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal14"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Casio GP310 Piano/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Casio GP310 Grand Hybrid Digital Piano, Satin Black
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $2.449.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          </h3>
+
+          <div class="price-stock">
+            <p class="price">$2.449.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware -->
+        <!-- -i.Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal15" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Vintage V100 Reissued/1-remove-bg.png">
-    
-        <h3 class="item-title">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal15"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Vintage V100 Reissued/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $338.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          </h3>
+
+          <div class="price-stock">
+            <p class="price">$338.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.Butterscotch V52 Reissued Left Handed, Vintage -->
+        <!-- -i.Butterscotch V52 Reissued Left Handed, Vintage -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal16" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-remove-bg.png">
-    
-        <h3 class="item-title">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal16"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Vintage V52 Reissued Left Handed, Butterscotch
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $299.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          </h3>
+
+          <div class="price-stock">
+            <p class="price">$299.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.
+        <!-- -i.
 Dean Edge 1 PJ Bass, Vintage Mahogany
  -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal17" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Dean Edge Bass/1-remove-bg.png">
-    
-        <h3 class="item-title">
-            Dean Edge 1 PJ Bass, Vintage Mahogany
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $179.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal17"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Dean Edge Bass/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">Dean Edge 1 PJ Bass, Vintage Mahogany</h3>
+
+          <div class="price-stock">
+            <p class="price">$179.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.
+        <!-- -i.
 Fender Player Precision Bass MN, Tidepool - Ex Demo
  -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal18" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Fender Player/1-remove-bg.png">
-    
-        <h3 class="item-title">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal18"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Fender Player/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Fender Player Precision Bass MN, Tidepool - Ex Demo
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $615.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
+          </h3>
+
+          <div class="price-stock">
+            <p class="price">$615.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
-        </div>
-<!-- -i.
+        <!-- -i.
 -i.
 Gibson SG Tribute Left Handed, Natural Walnut
 
  -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal19" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Gibson SG/1-remove-bg.png">
-    
-        <h3 class="item-title">
-            
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal19"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
 
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Gibson SG/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">
             Gibson SG Tribute Left Handed, Natural Walnut
+          </h3>
 
-
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $999.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
-        </div>
+          <div class="price-stock">
+            <p class="price">$999.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
         <!-- -i.
 Ibanez RGA42FM, Blue Lagoon Burst Flat
  -->
         <div class="item">
-            <div class="overlay">
-                <button class="modal-btn my-cart-btn" href="#modal20" id="settings-modal-btn">Quick View</button>
-            </div>
-            
-    <img class="item-image" src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-remove-bg.png">
-    
-        <h3 class="item-title">
-Ibanez RGA42FM, Blue Lagoon Burst Flat
-        </h3>
-        
-        <div class="price-stock">
-            <p class="price">
-                $379.00
-            </p>
-            <p class="stock">
-                18 in stock
-            </p>
-        </div>
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal20"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
+
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-remove-bg.png"
+          />
+
+          <h3 class="item-title">Ibanez RGA42FM, Blue Lagoon Burst Flat</h3>
+
+          <div class="price-stock">
+            <p class="price">$379.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
         </div>
 
         <!-- -i.
 Fender Noventa Jazzmaster MN, Surf Green
  -->
- <div class="item">
-    <div class="overlay">
-        <button class="modal-btn my-cart-btn" href="#modal21" id="settings-modal-btn">Quick View</button>
-    </div>
-    
-<img class="item-image" src="../product landing page/product_gallery/img/Fender Noventa/1-remove-bg.png">
+        <div class="item">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal21"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
 
-<h3 class="item-title">
-    Fender Noventa Jazzmaster MN, Surf Green
-</h3>
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Fender Noventa/1-remove-bg.png"
+          />
 
-<div class="price-stock">
-    <p class="price">
-        $889.00
-    </p>
-    <p class="stock">
-        18 in stock
-    </p>
-</div>
-</div>
+          <h3 class="item-title">Fender Noventa Jazzmaster MN, Surf Green</h3>
 
- <!-- -i.
+          <div class="price-stock">
+            <p class="price">$889.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
+        </div>
+
+        <!-- -i.
 Ibanez TCM50 Talman, Vintage Brown Burst
  -->
- <div class="item">
-    <div class="overlay">
-        <button class="modal-btn my-cart-btn" href="#modal22" id="settings-modal-btn">Quick View</button>
-    </div>
-    
-<img class="item-image" src="../product landing page/product_gallery/img/Ibanez Talman/1-remove-bg.png">
+        <div class="item">
+          <div class="overlay">
+            <button
+              class="quickview my-cart-btn"
+              href="#modal22"
+              id="settings-modal-btn"
+            >
+              Quick View
+            </button>
+          </div>
 
-<h3 class="item-title">
-    Ibanez TCM50 Talman, Vintage Brown Burst
-</h3>
+          <img
+            class="item-image"
+            src="../product landing page/product_gallery/img/Ibanez Talman/1-remove-bg.png"
+          />
 
-<div class="price-stock">
-    <p class="price">
-        $269.00
-    </p>
-    <p class="stock">
-        18 in stock
-    </p>
-</div>
-</div>
+          <h3 class="item-title">Ibanez TCM50 Talman, Vintage Brown Burst</h3>
 
+          <div class="price-stock">
+            <p class="price">$269.00</p>
+            <p class="stock">18 in stock</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Subscription Field -->
+    <section class="subscription">
+      <div class="subscription-wrapper">
+        <h3>Be the first to know about exclusive offers, tips and more.</h3>
+        <form>
+          <input id="email" type="email" placeholder="Enter your email here" />
+          <button class="sign-up">Sign Up</button>
+        </form>
+      </div>
+    </section>
 
-       </div>
-   </section>
-
-<!-- Subscription Field -->
-<section class="subscription">
-<div class="subscription-wrapper">
-    <h3>
-        Be the first to know about exclusive offers, tips and more.
-    </h3>
-    <form>
-        <input id="email" type="email" placeholder="Enter your email here">
-        <button class="sign-up">Sign Up</button>
-    </form>
-
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="footer-wrapper">
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-wrapper">
         <div class="icons">
-            <h5>Connect with us</h5>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+          <h5>Connect with us</h5>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
         </div>
-        <p>
-            Copyright &copy; 2021
-        </p>
-    </div>
-</footer>
-<!-- ======= MODALS ======== -->
-<!--  -m.Digital Drums 400 Compact Electronic Drum Kit Package Deal -->
-<div id="modal11" class="myModal">
-    <div class="modal-content">
-<!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg" class="xzoom11" xoriginal="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg" xpreview="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-min.jpg" alt="" class="xzoom-gallery11">
-        </a>
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/2-min.jpg" class="xzoom-gallery11">
-        </a>
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/3-min.jpg" class="xzoom-gallery11">
-        </a>
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/4-min.jpg" class="xzoom-gallery11">
-        </a>
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/5-min.jpg" class="xzoom-gallery11">
-        </a>
-        <a href="../product landing page/product_gallery/img/Digital Drums 400 Compact/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Digital Drums 400 Compact/6-min.jpg" class="xzoom-gallery11">
-        </a>
-    </div>
+        <p>Copyright &copy; 2021</p>
+      </div>
+    </footer>
+    <!-- ======= MODALS ======== -->
+    <!--  -m.Digital Drums 400 Compact Electronic Drum Kit Package Deal -->
+    <div id="modal11" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg"
+            class="xzoom11"
+            xoriginal="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/1.jpg"
+                xpreview="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-min.jpg"
+                alt=""
+                class="xzoom-gallery11"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/2-min.jpg"
+                class="xzoom-gallery11"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/3-min.jpg"
+                class="xzoom-gallery11"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/4-min.jpg"
+                class="xzoom-gallery11"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/5-min.jpg"
+                class="xzoom-gallery11"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Digital Drums 400 Compact/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Digital Drums 400 Compact/6-min.jpg"
+                class="xzoom-gallery11"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-     <div class="modal-info">
-        <h1>      
-            Digital Drums 400 Compact Electronic Drum Kit Package Deal
-        </h1>
-          
-        <h2 class="modal-price">
-             $219.99
-        </h2>
-        <div class="modal-price-wrapper">   
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn  my-cart-btn" data-id="11" data-name="Digital Drums 400 Compact Electronic Drum Kit Package Deal" data-summary="summary 1" data-price="219.99" data-quantity="1" data-image="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-remove-bg.png" >
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">
-        View Product Description</button>  
-  <p  class="collapse">
-      This is the place to start drumming. The Gear4music DD400 electronic drum kit gives you all the tools you need to become a drummer. It's super quiet, so you'll be able practise more without keeping the whole street awake - just use headphones.
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Digital Drums 400 Compact Electronic Drum Kit Package Deal</h1>
 
-Play for every genre. The DD400 has 108 unique drum sounds and ten pre-programmed kits, so there's no shortage of options. You'll be creating your own beats in no time, and thanks to USB and MIDI connectivity, you can record straight into a computer.
-
-  </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+          <h2 class="modal-price">$219.99</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="11"
+                data-name="Digital Drums 400 Compact Electronic Drum Kit Package Deal"
+                data-summary="summary 1"
+                data-price="219.99"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Digital Drums 400 Compact/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            This is the place to start drumming. The Gear4music DD400 electronic
+            drum kit gives you all the tools you need to become a drummer. It's
+            super quiet, so you'll be able practise more without keeping the
+            whole street awake - just use headphones. Play for every genre. The
+            DD400 has 108 unique drum sounds and ten pre-programmed kits, so
+            there's no shortage of options. You'll be creating your own beats in
+            no time, and thanks to USB and MIDI connectivity, you can record
+            straight into a computer.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <!-- -m.PRS SE Tremonti Custom, Gray Black -->
     <div id="modal12" class="myModal">
-        <div class="modal-content">
-            <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg" class="xzoom12" xoriginal="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-min.jpg" xpreview="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-min.jpg" alt="" class="xzoom-gallery12">
-        </a>
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/2-min.jpg" class="xzoom-gallery12">
-        </a>
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/3-min.jpg" class="xzoom-gallery12">
-        </a>
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/4-min.jpg" class="xzoom-gallery12">
-        </a>
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/5-min.jpg" class="xzoom-gallery12">
-        </a>
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg"
+            class="xzoom12"
+            xoriginal="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-min.jpg"
+                alt=""
+                class="xzoom-gallery12"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/2-min.jpg"
+                class="xzoom-gallery12"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/3-min.jpg"
+                class="xzoom-gallery12"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/4-min.jpg"
+                class="xzoom-gallery12"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/5-min.jpg"
+                class="xzoom-gallery12"
+              />
+            </a>
 
-        <a href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/6-min.jpg" class="xzoom-gallery12">
-        </a>
-    </div>
+            <a
+              href="../product landing page/product_gallery/img/PRS SE Tremonti Custom/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/PRS SE Tremonti Custom/6-min.jpg"
+                class="xzoom-gallery12"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->   
+        <!-- zoom container end -->
         <div class="modal-info">
-            <h1>      
-                
-PRS SE Tremonti Custom, Gray Black
+          <h1>PRS SE Tremonti Custom, Gray Black</h1>
 
-            </h1>
-
-            <h2 class="modal-price">
-                $749.00
-            </h2>
-            <div class="modal-price-wrapper">       
-        <div class="spinner-cart-wrapper">
-                    <input type="number">  
-            <button class="add-cart-btn  my-cart-btn" data-id="12" data-name="PRS SE Tremonti Custom, Gray Black
-            " data-summary="summary 1" data-price="749.00" data-quantity="1" data-image="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-remove-bg.png">
+          <h2 class="modal-price">$749.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="12"
+                data-name="PRS SE Tremonti Custom, Gray Black
+            "
+                data-summary="summary 1"
+                data-price="749.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/PRS SE Tremonti Custom/1-remove-bg.png"
+              >
                 Add to cart
-            </button>
-        </div>
-        </div>
-        <button class="show-p" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            The PRS SE Tremonti Custom combines classic PRS punch and searing humbucking goodness with untouchable Tremonti tone. An elegant yet rock-ready design that's been approved by the man himself, Mark Tremonti. Expect high-end sound and pro-ready features to take your music to new levels while Mark's signature Tremonti S pickups give you plenty of tonal aggression and articulation for unleashing monstrous riffs and searing solos. It's simply perfect for metal and rock genres. Plus, with a Wide Thin neck, you'll find the PRS SE Custom effortless to play, allowing you to fly up and down the neck with speed and precision. 
-        </p>
-        </div>
-        <span class="close">&times;</span>
-            </div>     
-        </div> 
-<!-- -m.EVO By Audient EVO SRB Recording Pack
- -->
-<div id="modal13" class="myModal">
-    <div class=" modal-content">
-        <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg" class="xzoom13" xoriginal="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1.jpg">
-            <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg" xpreview="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg" alt="" class="xzoom-gallery13">
-        </a>
-        <a href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/2-min.jpg" class="xzoom-gallery13">
-        </a>
-        <a href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/3-min.jpg" class="xzoom-gallery13">
-        </a>
-        <a href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/4-min.jpg" class="xzoom-gallery13">
-        </a>
-
-        <a href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/5-min.jpg" class="xzoom-gallery13">
-        </a>
-    </div>
-        </div>
-<!-- zoom container end --> 
-    <div class="modal-info">
-        <h1>           
-            EVO By Audient EVO SRB Recording Pack
-        </h1>
-        
-        <h2 class="modal-price">
-            $199.99
-        </h2>
-        <div class="modal-price-wrapper">       
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-                
-        <button class="add-cart-btn  my-cart-btn" data-id="13" data-name="EVO By Audient EVO SRB Recording Pack" data-summary="summary 1" data-price="199.99" data-quantity="1" data-image="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse" class="show-p" >View Product Description</button>  
-        <p class="collapse">
-            The Ibanez SR300E Bass, Iron Pewter delivers excellent precision and speed, providing players with the means to craft their own playing style while delivering a professional performance. Constructed from a mahogany body, 5-piece maple/walnut neck, and jatoba fingerboard, the SR300E Bass delivers beautifully bright, warm tones with excellent lows and strong mids for a classic bass thump. A set of PowerSpan dual coil pickups provides a smooth string response, with rich harmonics and stunning dynamic expressions for a versatile performance. 
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
-    </div> 
-    <!-- -m.Casio GP310 Grand Hybrid Digital Piano, Satin Black -->
-<div id="modal14" class="myModal">
-    <div class=" modal-content">
-        <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg" class="xzoom14" xoriginal="../product landing page/product_gallery/img/Casio GP310 Piano/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/1.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg" xpreview="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg" alt="" class="xzoom-gallery14">
-        </a>
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/2-min.jpg" class="xzoom-gallery14">
-        </a>
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/3-min.jpg" class="xzoom-gallery14">
-        </a>
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/4-min.jpg" class="xzoom-gallery14">
-        </a>
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/5-min.jpg" class="xzoom-gallery14">
-        </a>
-        <a href="../product landing page/product_gallery/img/Casio GP310 Piano/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Casio GP310 Piano/6-min.jpg" class="xzoom-gallery14">
-        </a>
-    </div>
-        </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            
-Casio GP310 Grand Hybrid Digital Piano, Satin Black
-
-        </h1>
-        
-        <h2 class="modal-price">
-            $2.449.00
-        </h2>
-        <div class="modal-price-wrapper">
-    <div class="spinner-cart-wrapper">
-                <input type="number">    
-        <button class="add-cart-btn my-cart-btn" data-id="14" data-name="Casio GP310 Grand Hybrid Digital Piano, Satin Black" data-summary="summary 1" data-price="2449" data-quantity="1" data-image="../product landing page/product_gallery/img/Casio GP310 Piano/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            Sound and touch. The senses that define your piano playing. It's those sensations that have been obsessed over for the new Casio GP310 hybrid grand piano in satin black. Created together with world-renowned grand piano builders C. Bechstein, it delivers an experience you can't mistake.
-The GP310 actually uses a full grand piano action mechanism for enhanced realism. But this isn't just a gimmick - this is the exact feel of a grand piano. By lifting the lid, you even see the hammers in motion. The drive for excellence is apparent all over the GP310.
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
-    </div> 
-    <!-- -m.Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware -->
-<div id="modal15" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg" class="xzoom15" xoriginal="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg">
-            <img src="../product landing page/product_gallery/img/Vintage V100 Reissued/1-min.jpg" xpreview="../product landing page/product_gallery/img/Vintage V100 Reissued/1-min.jpg" alt="" class="xzoom-gallery15">
-        </a>
-        <a href="../product landing page/product_gallery/img/Vintage V100 Reissued/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Vintage V100 Reissued/2-min.jpg" class="xzoom-gallery15">
-        </a>
-        <a href="../product landing page/product_gallery/img/Vintage V100 Reissued/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Vintage V100 Reissued/3-min.jpg" class="xzoom-gallery15">
-        </a>
-    </div>
-        </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            
-Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware
-
-        </h1>
-        
-        <h2 class="modal-price">
-            $338.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="15" data-name="Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware" data-summary="summary 1" data-price="338.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Vintage V100 Reissued/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse" class="show-p">View Product Description</button>  
-        <p class="collapse">
-            Pure vintage goodness. The Vintage V100 Reissued is the perfect guitar if you like a bit of old-fashioned crunch in your riffs. Coming with an array of quality features, you'll soon be caressing the beautiful mahogany neck as you sail through licks in style. With two powerful humbuckers loaded into the neck and bridge, your tone will have a real kick - whether you like to play tight rhythm or fluid lead.
-            Built for the vintage lover. There'll be nothing stopping you when you get your hands on a guitar like this. It has been expertly designed to bring you a smooth, effortless playing experience. You'll be able to express yourself with ease on the fretboard, with notes instantly coming to life on each fret you play. Prepare for a vintage ride like no other.
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
-    </div>
-      <!--  -m.Butterscotch V52 Reissued Left Handed, Butterscotch  -->
-      <div id="modal16" class="myModal">
-        <div class="modal-content">
-             <!-- zoom container start -->
-    <div class="xzoom-container">
-        <img src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg" class="xzoom16" xoriginal="../product landing page/product_gallery/img/Butterscotch Vintage V52/1.jpg" alt="">
-        <div class="xzoom-thumbs">
-            <a href="../product landing page/product_gallery/img/Butterscotch Vintage V52/1.jpg">
-                <img src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg" xpreview="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg" alt="" class="xzoom-gallery16">
-            </a>
-            <a href="../product landing page/product_gallery/img/Butterscotch Vintage V52/2-min.jpg">
-                <img src="../product landing page/product_gallery/img/Butterscotch Vintage V52/2-min.jpg" class="xzoom-gallery16">
-            </a>
-            <a href="../product landing page/product_gallery/img/Butterscotch Vintage V52/3-min.jpg">
-                <img src="../product landing page/product_gallery/img/Butterscotch Vintage V52/3-min.jpg" class="xzoom-gallery16">
-            </a>
-        </div>
+              </button>
             </div>
-    <!-- zoom container end -->
-        <div class="modal-info">
-            <h1>         
-                Vintage V52 Reissued Left Handed, Butterscotch
-            </h1>
-            
-            <h2 class="modal-price">
-                $299.00
-            </h2>
-            <div class="modal-price-wrapper">  
-        <div class="spinner-cart-wrapper">
-                    <input type="number">
-            <button  class="add-cart-btn my-cart-btn" data-id="16" data-name="Vintage V52 Reissued Left Handed, Butterscotch" data-summary="summary 1" data-price="299.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-remove-bg.png">
-                Add to cart
-            </button>
-        </div>
-        </div>
-        <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-            <p class="collapse">
-                For the vintage guitar lovers. The Vintage V52 Reissued Left Handed is a stunning example of how you can combine vintage design and sound with modern playability and ergonomics. A pair of twangy Wilkinson single coil pickups give you all the punch and bite which is reminiscent of older guitar tones. And the classic duo of a maple neck and fretboard ensure this punch is enhanced and pronounced, providing a bright, snappy response and lusciously smooth playability. From the classic body design to the sublime vintage voicing, this guitar will get you excited to play.
-ct.
-            </p>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The PRS SE Tremonti Custom combines classic PRS punch and searing
+            humbucking goodness with untouchable Tremonti tone. An elegant yet
+            rock-ready design that's been approved by the man himself, Mark
+            Tremonti. Expect high-end sound and pro-ready features to take your
+            music to new levels while Mark's signature Tremonti S pickups give
+            you plenty of tonal aggression and articulation for unleashing
+            monstrous riffs and searing solos. It's simply perfect for metal and
+            rock genres. Plus, with a Wide Thin neck, you'll find the PRS SE
+            Custom effortless to play, allowing you to fly up and down the neck
+            with speed and precision.
+          </p>
         </div>
         <span class="close">&times;</span>
-            </div>     
+      </div>
+    </div>
+    <!-- -m.EVO By Audient EVO SRB Recording Pack
+ -->
+    <div id="modal13" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg"
+            class="xzoom13"
+            xoriginal="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-min.jpg"
+                alt=""
+                class="xzoom-gallery13"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/2-min.jpg"
+                class="xzoom-gallery13"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/3-min.jpg"
+                class="xzoom-gallery13"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/4-min.jpg"
+                class="xzoom-gallery13"
+              />
+            </a>
+
+            <a
+              href="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/5-min.jpg"
+                class="xzoom-gallery13"
+              />
+            </a>
+          </div>
         </div>
-<!-- 
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>EVO By Audient EVO SRB Recording Pack</h1>
+
+          <h2 class="modal-price">$199.99</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="13"
+                data-name="EVO By Audient EVO SRB Recording Pack"
+                data-summary="summary 1"
+                data-price="199.99"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/EVO By Audient EVO SRB Recording Pack/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+            class="show-p"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The Ibanez SR300E Bass, Iron Pewter delivers excellent precision and
+            speed, providing players with the means to craft their own playing
+            style while delivering a professional performance. Constructed from
+            a mahogany body, 5-piece maple/walnut neck, and jatoba fingerboard,
+            the SR300E Bass delivers beautifully bright, warm tones with
+            excellent lows and strong mids for a classic bass thump. A set of
+            PowerSpan dual coil pickups provides a smooth string response, with
+            rich harmonics and stunning dynamic expressions for a versatile
+            performance.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!-- -m.Casio GP310 Grand Hybrid Digital Piano, Satin Black -->
+    <div id="modal14" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg"
+            class="xzoom14"
+            xoriginal="../product landing page/product_gallery/img/Casio GP310 Piano/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Casio GP310 Piano/1-min.jpg"
+                alt=""
+                class="xzoom-gallery14"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/2-min.jpg"
+                class="xzoom-gallery14"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/3-min.jpg"
+                class="xzoom-gallery14"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/4-min.jpg"
+                class="xzoom-gallery14"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/5-min.jpg"
+                class="xzoom-gallery14"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Casio GP310 Piano/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Casio GP310 Piano/6-min.jpg"
+                class="xzoom-gallery14"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Casio GP310 Grand Hybrid Digital Piano, Satin Black</h1>
+
+          <h2 class="modal-price">$2.449.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="14"
+                data-name="Casio GP310 Grand Hybrid Digital Piano, Satin Black"
+                data-summary="summary 1"
+                data-price="2449"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Casio GP310 Piano/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            Sound and touch. The senses that define your piano playing. It's
+            those sensations that have been obsessed over for the new Casio
+            GP310 hybrid grand piano in satin black. Created together with
+            world-renowned grand piano builders C. Bechstein, it delivers an
+            experience you can't mistake. The GP310 actually uses a full grand
+            piano action mechanism for enhanced realism. But this isn't just a
+            gimmick - this is the exact feel of a grand piano. By lifting the
+            lid, you even see the hammers in motion. The drive for excellence is
+            apparent all over the GP310.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!-- -m.Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware -->
+    <div id="modal15" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg"
+            class="xzoom15"
+            xoriginal="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Vintage V100 Reissued/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Vintage V100 Reissued/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Vintage V100 Reissued/1-min.jpg"
+                alt=""
+                class="xzoom-gallery15"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Vintage V100 Reissued/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Vintage V100 Reissued/2-min.jpg"
+                class="xzoom-gallery15"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Vintage V100 Reissued/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Vintage V100 Reissued/3-min.jpg"
+                class="xzoom-gallery15"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware</h1>
+
+          <h2 class="modal-price">$338.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="15"
+                data-name="Vintage V100 Reissued, Natural Maple Gloss w/ Gold Hardware"
+                data-summary="summary 1"
+                data-price="338.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Vintage V100 Reissued/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+            class="show-p"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            Pure vintage goodness. The Vintage V100 Reissued is the perfect
+            guitar if you like a bit of old-fashioned crunch in your riffs.
+            Coming with an array of quality features, you'll soon be caressing
+            the beautiful mahogany neck as you sail through licks in style. With
+            two powerful humbuckers loaded into the neck and bridge, your tone
+            will have a real kick - whether you like to play tight rhythm or
+            fluid lead. Built for the vintage lover. There'll be nothing
+            stopping you when you get your hands on a guitar like this. It has
+            been expertly designed to bring you a smooth, effortless playing
+            experience. You'll be able to express yourself with ease on the
+            fretboard, with notes instantly coming to life on each fret you
+            play. Prepare for a vintage ride like no other.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!--  -m.Butterscotch V52 Reissued Left Handed, Butterscotch  -->
+    <div id="modal16" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg"
+            class="xzoom16"
+            xoriginal="../product landing page/product_gallery/img/Butterscotch Vintage V52/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Butterscotch Vintage V52/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-min.jpg"
+                alt=""
+                class="xzoom-gallery16"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Butterscotch Vintage V52/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Butterscotch Vintage V52/2-min.jpg"
+                class="xzoom-gallery16"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Butterscotch Vintage V52/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Butterscotch Vintage V52/3-min.jpg"
+                class="xzoom-gallery16"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Vintage V52 Reissued Left Handed, Butterscotch</h1>
+
+          <h2 class="modal-price">$299.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="16"
+                data-name="Vintage V52 Reissued Left Handed, Butterscotch"
+                data-summary="summary 1"
+                data-price="299.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Butterscotch Vintage V52/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            For the vintage guitar lovers. The Vintage V52 Reissued Left Handed
+            is a stunning example of how you can combine vintage design and
+            sound with modern playability and ergonomics. A pair of twangy
+            Wilkinson single coil pickups give you all the punch and bite which
+            is reminiscent of older guitar tones. And the classic duo of a maple
+            neck and fretboard ensure this punch is enhanced and pronounced,
+            providing a bright, snappy response and lusciously smooth
+            playability. From the classic body design to the sublime vintage
+            voicing, this guitar will get you excited to play. ct.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!-- 
 -m.Dean Edge 1 PJ Bass, Vintage Mahogany
  -->
-<div id="modal17" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg" class="xzoom17" xoriginal="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/1-min.jpg" xpreview="../product landing page/product_gallery/img/Dean Edge Bass/1-min.jpg" alt="" class="xzoom-gallery17">
-        </a>
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/2-min.jpg" class="xzoom-gallery17">
-        </a>
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/3-min.jpg" class="xzoom-gallery17">
-        </a>
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/4-min.jpg" class="xzoom-gallery17">
-        </a>
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/5-min.jpg" class="xzoom-gallery17">
-        </a>
-        <a href="../product landing page/product_gallery/img/Dean Edge Bass/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Dean Edge Bass/6-min.jpg" class="xzoom-gallery17">
-        </a>
-    </div>
+    <div id="modal17" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg"
+            class="xzoom17"
+            xoriginal="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Dean Edge Bass/1-min.jpg"
+                alt=""
+                class="xzoom-gallery17"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/2-min.jpg"
+                class="xzoom-gallery17"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/3-min.jpg"
+                class="xzoom-gallery17"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/4-min.jpg"
+                class="xzoom-gallery17"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/5-min.jpg"
+                class="xzoom-gallery17"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Dean Edge Bass/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Dean Edge Bass/6-min.jpg"
+                class="xzoom-gallery17"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            
-Dean Edge 1 PJ Bass, Vintage Mahogany
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Dean Edge 1 PJ Bass, Vintage Mahogany</h1>
 
-        </h1>
-        
-        <h2 class="modal-price">
-            $179.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button  class="add-cart-btn my-cart-btn" data-id="17" data-name="Dean Edge 1 PJ Bass, Vintage Mahogany
-        " data-summary="summary 1" data-price="179.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Dean Edge Bass/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            The Dean Edge PJ Bass Guitar features a stunning mahogany body with a natural finish, combined with a maple neck and Walnut fingerboard to create beautifully balanced tones. The mahogany produces an incredibly warm, sweet tones, while the maple's right characteristics are 'furred up' by the Walnut fingerboard to remove any harshness for a sparkling high-end and thick low-end.
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+          <h2 class="modal-price">$179.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="17"
+                data-name="Dean Edge 1 PJ Bass, Vintage Mahogany
+        "
+                data-summary="summary 1"
+                data-price="179.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Dean Edge Bass/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The Dean Edge PJ Bass Guitar features a stunning mahogany body with
+            a natural finish, combined with a maple neck and Walnut fingerboard
+            to create beautifully balanced tones. The mahogany produces an
+            incredibly warm, sweet tones, while the maple's right
+            characteristics are 'furred up' by the Walnut fingerboard to remove
+            any harshness for a sparkling high-end and thick low-end.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <!-- -m.Fender Player Precision Bass MN, Tidepool - Ex Demo -->
-<div id="modal18" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Fender Player/1-min.jpg" class="xzoom18" xoriginal="../product landing page/product_gallery/img/Fender Player/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Fender Player/1.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/1-min.jpg" xpreview="../product landing page/product_gallery/img/Fender Player/1-min.jpg" alt="" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/2-min.jpg" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/3-min.jpg" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/4-min.jpg" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/5-min.jpg" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/6-min.jpg" class="xzoom-gallery18">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Player/7-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Player/7-min.jpg" class="xzoom-gallery18">
-        </a>
-    </div>
+    <div id="modal18" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Fender Player/1-min.jpg"
+            class="xzoom18"
+            xoriginal="../product landing page/product_gallery/img/Fender Player/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Fender Player/1-min.jpg"
+                alt=""
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/2-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/3-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/4-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/5-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/6-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Player/7-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Player/7-min.jpg"
+                class="xzoom-gallery18"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            
-Fender Player Precision Bass MN, Tidepool - Ex Demo
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Fender Player Precision Bass MN, Tidepool - Ex Demo</h1>
 
-        </h1>
-        
-        <h2 class="modal-price">
-            $615.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="18" data-name="Fender Player Precision Bass MN, Tidepool - Ex Demo
-        " data-summary="summary 1" data-price="615.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Fender Player/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            These instruments may show light signs of use. They are quality checked by our team of repair technicians to ensure that they meet high playing standards.
-
-Any promotional materials, offers, software or subscriptions available when purchased as new may not be available with this Ex-Demo product.
-
-Unlock your potential. And do so with the best in the business. The Fender Player Precision Bass combines the unrivalled heritage of Fender with their constant thirst for innovation, to deliver a bass that's tailored for players who seek a little more out of their instrument. 
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+          <h2 class="modal-price">$615.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="18"
+                data-name="Fender Player Precision Bass MN, Tidepool - Ex Demo
+        "
+                data-summary="summary 1"
+                data-price="615.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Fender Player/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            These instruments may show light signs of use. They are quality
+            checked by our team of repair technicians to ensure that they meet
+            high playing standards. Any promotional materials, offers, software
+            or subscriptions available when purchased as new may not be
+            available with this Ex-Demo product. Unlock your potential. And do
+            so with the best in the business. The Fender Player Precision Bass
+            combines the unrivalled heritage of Fender with their constant
+            thirst for innovation, to deliver a bass that's tailored for players
+            who seek a little more out of their instrument.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <!-- -m.Gibson SG Tribute Left Handed, Natural Walnut -->
-<div id="modal19" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Gibson SG/1-min.jpg" class="xzoom19" xoriginal="../product landing page/product_gallery/img/Gibson SG/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Gibson SG/1.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/1-min.jpg" xpreview="../product landing page/product_gallery/img/Gibson SG/1-min.jpg" alt="" class="xzoom-gallery19">
-        </a>
-        <a href="../product landing page/product_gallery/img/Gibson SG/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/2-min.jpg" class="xzoom-gallery19">
-        </a>
-        <a href="../product landing page/product_gallery/img/Gibson SG/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/3-min.jpg" class="xzoom-gallery19">
-        </a>
-        <a href="../product landing page/product_gallery/img/Gibson SG/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/4-min.jpg" class="xzoom-gallery19">
-        </a>
-        <a href="../product landing page/product_gallery/img/Gibson SG/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/5-min.jpg" class="xzoom-gallery19">
-        </a>
-        <a href="../product landing page/product_gallery/img/Gibson SG/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Gibson SG/6-min.jpg" class="xzoom-gallery19">
-        </a>
-    </div>
+    <div id="modal19" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Gibson SG/1-min.jpg"
+            class="xzoom19"
+            xoriginal="../product landing page/product_gallery/img/Gibson SG/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Gibson SG/1-min.jpg"
+                alt=""
+                class="xzoom-gallery19"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/2-min.jpg"
+                class="xzoom-gallery19"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/3-min.jpg"
+                class="xzoom-gallery19"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/4-min.jpg"
+                class="xzoom-gallery19"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/5-min.jpg"
+                class="xzoom-gallery19"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Gibson SG/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Gibson SG/6-min.jpg"
+                class="xzoom-gallery19"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            Gibson SG Tribute Left Handed, Natural Walnut
-        </h1>
-        
-        <h2 class="modal-price">
-            $999.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="19" data-name="Gibson SG Tribute Left Handed, Natural Walnut
-        " data-summary="summary 1" data-price="999.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Gibson SG/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            A well-crafted classic. The Gibson SG Tribute is just that - a fitting tribute to a legend of a guitar. Being modelled off the original design and coming packed with features which will make your jaw drop, it will take you on the ultimate musical journey. The classic 'devil horn' design hints at its devilishly good sound, with two high grade Gibson pickups loaded into the neck and bridge. 
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Gibson SG Tribute Left Handed, Natural Walnut</h1>
+
+          <h2 class="modal-price">$999.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="19"
+                data-name="Gibson SG Tribute Left Handed, Natural Walnut
+        "
+                data-summary="summary 1"
+                data-price="999.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Gibson SG/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            A well-crafted classic. The Gibson SG Tribute is just that - a
+            fitting tribute to a legend of a guitar. Being modelled off the
+            original design and coming packed with features which will make your
+            jaw drop, it will take you on the ultimate musical journey. The
+            classic 'devil horn' design hints at its devilishly good sound, with
+            two high grade Gibson pickups loaded into the neck and bridge.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <!-- 
 -m.Ibanez RGA42FM, Blue Lagoon Burst Flat
  -->
-<div id="modal20" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg" class="xzoom20" xoriginal="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-min.jpg" xpreview="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-min.jpg" alt="" class="xzoom-gallery20">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/2-min.jpg" class="xzoom-gallery20">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/3-min.jpg" class="xzoom-gallery20">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/4-min.jpg" class="xzoom-gallery20">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/5-min.jpg" class="xzoom-gallery20">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/6-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/6-min.jpg" class="xzoom-gallery20">
-        </a>
-        
-    </div>
+    <div id="modal20" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg"
+            class="xzoom20"
+            xoriginal="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-min.jpg"
+                alt=""
+                class="xzoom-gallery20"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/2-min.jpg"
+                class="xzoom-gallery20"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/3-min.jpg"
+                class="xzoom-gallery20"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/4-min.jpg"
+                class="xzoom-gallery20"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/5-min.jpg"
+                class="xzoom-gallery20"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Blue Lagoon/6-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Blue Lagoon/6-min.jpg"
+                class="xzoom-gallery20"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-Ibanez RGA42FM, Blue Lagoon Burst Flat
-        </h1>
-        
-        <h2 class="modal-price">
-            $379.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="20" data-name="Ibanez RGA42FM, Blue Lagoon Burst Flat
-        " data-summary="summary 1" data-price="379.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            The Ibanez RGA42FM, Blue Lagoon Burst Flat offers high-performance, effortless playability, speed, and precision. Featuring a sleekly sculpted top, the guitar allows for unrestricted playing, allowing for full-blown power chording and heavy riffing without without fear of digging into your body. The RGA42FM is equipped with Quantum pickups that provide accelerated bass response, with crushing mid-range and precise high-end articulation. The Wizard III neck is thin, flat, fast, and strong, allowing for easy high speed playing with unhindered position shifting. The body is constructed from mahogany, which makes it lightweight. The neck is also tucked in to allow easy access to the highest notes.
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Ibanez RGA42FM, Blue Lagoon Burst Flat</h1>
+
+          <h2 class="modal-price">$379.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="20"
+                data-name="Ibanez RGA42FM, Blue Lagoon Burst Flat
+        "
+                data-summary="summary 1"
+                data-price="379.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Ibanez Blue Lagoon/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The Ibanez RGA42FM, Blue Lagoon Burst Flat offers high-performance,
+            effortless playability, speed, and precision. Featuring a sleekly
+            sculpted top, the guitar allows for unrestricted playing, allowing
+            for full-blown power chording and heavy riffing without without fear
+            of digging into your body. The RGA42FM is equipped with Quantum
+            pickups that provide accelerated bass response, with crushing
+            mid-range and precise high-end articulation. The Wizard III neck is
+            thin, flat, fast, and strong, allowing for easy high speed playing
+            with unhindered position shifting. The body is constructed from
+            mahogany, which makes it lightweight. The neck is also tucked in to
+            allow easy access to the highest notes.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
 
-     <!-- -m.
+    <!-- -m.
     Fender Noventa Jazzmaster MN, Surf Green -->
-<div id="modal21" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Fender Noventa/1.jpg" class="xzoom21" xoriginal="../product landing page/product_gallery/img/Fender Noventa/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Fender Noventa/1.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Noventa/1-min.jpg" xpreview="../product landing page/product_gallery/img/Fender Noventa/1-min.jpg" alt="" class="xzoom-gallery21">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Noventa/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Noventa/2-min.jpg" class="xzoom-gallery21">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Noventa/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Noventa/3-min.jpg" class="xzoom-gallery21">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Noventa/4-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Noventa/4-min.jpg" class="xzoom-gallery21">
-        </a>
-        <a href="../product landing page/product_gallery/img/Fender Noventa/5-min.jpg">
-            <img src="../product landing page/product_gallery/img/Fender Noventa/5-min.jpg" class="xzoom-gallery21">
-        </a>
-    </div>
+    <div id="modal21" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Fender Noventa/1.jpg"
+            class="xzoom21"
+            xoriginal="../product landing page/product_gallery/img/Fender Noventa/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Fender Noventa/1.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Noventa/1-min.jpg"
+                xpreview="../product landing page/product_gallery/img/Fender Noventa/1-min.jpg"
+                alt=""
+                class="xzoom-gallery21"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Noventa/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Noventa/2-min.jpg"
+                class="xzoom-gallery21"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Noventa/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Noventa/3-min.jpg"
+                class="xzoom-gallery21"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Noventa/4-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Noventa/4-min.jpg"
+                class="xzoom-gallery21"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Fender Noventa/5-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Fender Noventa/5-min.jpg"
+                class="xzoom-gallery21"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>         
-            Fender Noventa Jazzmaster MN, Surf Green
-        </h1>
-        
-        <h2 class="modal-price">
-            $889.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="21" data-name="Fender Noventa Jazzmaster MN, Surf Green
-        " data-summary="summary 1" data-price="889.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Fender Noventa/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            The perfect mix of vintage and modern. The Fender Noventa Jazzmaster MN really does have it all. Equipped with three Noventa single-coil pickups, this guitar exudes sonic excellence. Go from smooth, immersive lows to crisp highs - every note will pierce through the mix. And when you're armed with such an eye-catching Jazzmaster, you can be sure to look as good as you sound.
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Fender Noventa Jazzmaster MN, Surf Green</h1>
 
-An Adjusto-Matic bridge with vintage-style "floating" tremolo tailpiece allows you to add shimmering vibrato to your sound whilst always retaining great tuning stability. This vintage design is then complemented by a modern "C" shaped maple neck, offering immense playability to today's players. Fret skilfully at rocket speed whilst your sound soars from the strings with definition and volume. 
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
+          <h2 class="modal-price">$889.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="21"
+                data-name="Fender Noventa Jazzmaster MN, Surf Green
+        "
+                data-summary="summary 1"
+                data-price="889.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Fender Noventa/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The perfect mix of vintage and modern. The Fender Noventa Jazzmaster
+            MN really does have it all. Equipped with three Noventa single-coil
+            pickups, this guitar exudes sonic excellence. Go from smooth,
+            immersive lows to crisp highs - every note will pierce through the
+            mix. And when you're armed with such an eye-catching Jazzmaster, you
+            can be sure to look as good as you sound. An Adjusto-Matic bridge
+            with vintage-style "floating" tremolo tailpiece allows you to add
+            shimmering vibrato to your sound whilst always retaining great
+            tuning stability. This vintage design is then complemented by a
+            modern "C" shaped maple neck, offering immense playability to
+            today's players. Fret skilfully at rocket speed whilst your sound
+            soars from the strings with definition and volume.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
 
-     <!-- -m.
+    <!-- -m.
     Fender Noventa Jazzmaster MN, Surf Green -->
-<div id="modal22" class="myModal">
-    <div class="modal-content">
-         <!-- zoom container start -->
-<div class="xzoom-container">
-    <img src="../product landing page/product_gallery/img/Ibanez Talman/1.jpg" class="xzoom22" xoriginal="../product landing page/product_gallery/img/Ibanez Talman/1.jpg" alt="">
-    <div class="xzoom-thumbs">
-        <a href="../product landing page/product_gallery/img/Ibanez Talman/1-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Talman/1-min.jpg" class="xzoom-gallery22">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Talman/2-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Talman/2-min.jpg" class="xzoom-gallery22">
-        </a>
-        <a href="../product landing page/product_gallery/img/Ibanez Talman/3-min.jpg">
-            <img src="../product landing page/product_gallery/img/Ibanez Talman/3-min.jpg" class="xzoom-gallery22">
-        </a>
-    </div>
+    <div id="modal22" class="myModal">
+      <div class="modal-content">
+        <!-- zoom container start -->
+        <div class="xzoom-container">
+          <img
+            src="../product landing page/product_gallery/img/Ibanez Talman/1.jpg"
+            class="xzoom22"
+            xoriginal="../product landing page/product_gallery/img/Ibanez Talman/1.jpg"
+            alt=""
+          />
+          <div class="xzoom-thumbs">
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Talman/1-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Talman/1-min.jpg"
+                class="xzoom-gallery22"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Talman/2-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Talman/2-min.jpg"
+                class="xzoom-gallery22"
+              />
+            </a>
+            <a
+              href="../product landing page/product_gallery/img/Ibanez Talman/3-min.jpg"
+            >
+              <img
+                src="../product landing page/product_gallery/img/Ibanez Talman/3-min.jpg"
+                class="xzoom-gallery22"
+              />
+            </a>
+          </div>
         </div>
-<!-- zoom container end -->
-    <div class="modal-info">
-        <h1>          
-Ibanez TCM50 Talman, Vintage Brown Burst
-        </h1>
-        
-        <h2 class="modal-price">
-            $269.00
-        </h2>
-        <div class="modal-price-wrapper">  
-    <div class="spinner-cart-wrapper">
-                <input type="number">
-        <button class="add-cart-btn my-cart-btn" data-id="22" data-name="Ibanez TCM50 Talman, Vintage Brown Burst
-        " data-summary="summary 1" data-price="269.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Ibanez Talman/1-remove-bg.png">
-            Add to cart
-        </button>
-    </div>
-    </div>
-    <button class="show-p"  data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls=".collapse">View Product Description</button>  
-        <p class="collapse">
-            The Ibanez TCM50 Talman, Vintage Brown Burst offers the perfect blend of acoustic tones with the style and comfort of an electric guitar, ideal for electric players wanting to expand their arsenal with a classic acoustic performance. Its beautifully figured ash top and sapele body delivers an exceptionally sweet tone, with its double cutaway design providing the ultimate access to its higher register. The mahogany neck and purpleheart fingerboard offers an incredible smooth playing feel, while infusing the overall tone with stunning lows and breathtaking highs. The 2018 TCM50 Talman Is also equipped with Ibanez's preamp system and magnetic pickup, delivering the perfect stage ready performance.
-        </p>
-    </div>
-    <span class="close">&times;</span>
-        </div>     
-    </div>
-<!-- ======= MODALS END ======== -->
+        <!-- zoom container end -->
+        <div class="modal-info">
+          <h1>Ibanez TCM50 Talman, Vintage Brown Burst</h1>
 
-<!-- Vanilla Js -->
-<script type="text/javascript" src="../product landing page/hamburger.js"></script>
-<script type="text/javascript" src="../product landing page/JS&Jquery/modal.js"></script>
+          <h2 class="modal-price">$269.00</h2>
+          <div class="modal-price-wrapper">
+            <div class="spinner-cart-wrapper">
+              <button
+                class="add-cart-btn my-cart-btn"
+                data-id="22"
+                data-name="Ibanez TCM50 Talman, Vintage Brown Burst
+        "
+                data-summary="summary 1"
+                data-price="269.00"
+                data-quantity="1"
+                data-image="../product landing page/product_gallery/img/Ibanez Talman/1-remove-bg.png"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <button
+            class="show-p"
+            data-toggle="collapse"
+            data-target=".collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls=".collapse"
+          >
+            View Product Description
+          </button>
+          <p class="collapse">
+            The Ibanez TCM50 Talman, Vintage Brown Burst offers the perfect
+            blend of acoustic tones with the style and comfort of an electric
+            guitar, ideal for electric players wanting to expand their arsenal
+            with a classic acoustic performance. Its beautifully figured ash top
+            and sapele body delivers an exceptionally sweet tone, with its
+            double cutaway design providing the ultimate access to its higher
+            register. The mahogany neck and purpleheart fingerboard offers an
+            incredible smooth playing feel, while infusing the overall tone with
+            stunning lows and breathtaking highs. The 2018 TCM50 Talman Is also
+            equipped with Ibanez's preamp system and magnetic pickup, delivering
+            the perfect stage ready performance.
+          </p>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!-- ======= MODALS END ======== -->
 
-<!-- Owl Sliders -->
-<script type="text/javascript" src="../product landing page/JS&Jquery/owl carousel/jquery-min.js"></script>
-<script type="text/javascript" src="../product landing page/JS&Jquery/owl carousel/owl.carousel.min.js"></script> 
-<script type="text/javascript" src="../product landing page/JS&Jquery/owl carousel/jquery.js"></script>
+    <!-- Vanilla Js -->
+    <script
+      type="text/javascript"
+      src="../product landing page/hamburger.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/modal.js"
+    ></script>
 
-<!-- Add to cart plugin -->
-<script
-			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-			  ></script>
-              <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-              <script type="text/javascript" 
-              src="../product landing page/JS&Jquery/add to cart/jquery.mycart.js"
-              ></script>
-              <script type="text/javascript"
-              src="../product landing page/JS&Jquery/add to cart/cart.js"
-              ></script>
-              <!-- Product Gallery -->
-<script type="text/javascript" src="../product landing page/product_gallery/zoom.js"></script>
-<script type="text/javascript" src="../product landing page/product_gallery/script.js"></script>
-<!-- Number Spinner -->
-<script type="text/javascript" src="../product landing page/JS&Jquery/number spinner/jquery.nice-number.js">
-</script>
-<script type="text/javascript" src="../product landing page/JS&Jquery/number spinner/jquery-number.js">
-</script>
-</body>
+    <!-- Owl Sliders -->
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/owl carousel/jquery-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/owl carousel/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/owl carousel/jquery.js"
+    ></script>
 
+    <!-- Add to cart plugin -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/add to cart/jquery.mycart.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/JS&Jquery/add to cart/cart.js"
+    ></script>
+    <!-- Product Gallery -->
+    <script
+      type="text/javascript"
+      src="../product landing page/product_gallery/zoom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../product landing page/product_gallery/script.js"
+    ></script>
+  </body>
 </html>

@@ -1,229 +1,188 @@
-/* Media Queries */
-@media (min-width: 768px) {
-  .nav-menu {
-    .nav-ul {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      width: 100%;
-    }
-  }
-}
-// Lg Screens
-@media screen and (max-width: 1400px) {
-  /* Features */
-  .features {
-    .f-container {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-  }
-}
+@media (min-width:768px) {
+    .header {
+        .nav-logo-wrapper {
+            .main-logo {
+                margin:1rem 0 ;
+                h1 {
+                    font-size: 2.5rem;
 
-// Md Screens
-@media screen and (max-width: 1024px) {
-  /* Main Logo */
-  .nav-logo-wrapper {
-    flex-direction: column;
+                    .rts {
+                        bottom:65px;
+                    }
+                }
+                .logo-subtitle {
+                    font-size: 1.2rem;
+                }  
+            }
 
-    .main_logo {
-      margin-bottom: 3rem;
-    }
-    // .nav-ul {
-    //   margin-bottom: 1rem;
-    //   display: flex;
-    // }
-  }
 
-  // Hero Section
-  .hero {
-    .hero-container {
-      flex-direction: column;
-      .lg-text {
-        h1 {
-          font-size: 7rem;
+            .menu-btn {
+                display: none;
+            }
+
+            .menu {
+                transform: none;
+                visibility: visible;
+                background: none;
+                position: unset;
+                
+
+                &-ul {
+                    display:flex !important;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width:
+                        100%;
+                        margin:0;
+                }
+
+                &-item {
+                    transform: none;
+                }
+
+                
+            }
         }
-      }
-
-      .lg-button-wrapper {
-        margin-top: 2rem;
-        height: 30vh;
-      }
     }
-  }
 
-  // Modal Content
-  .myModal {
+    .hero {
+        .hero-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding:4rem;       
+            .hero-text {
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+
+    .subscription {
+        .subscription-wrapper {
+            
+            .form {
+                flex-direction: row;
+                justify-content: center;
+                
+                input {
+                    max-width:400px;
+                    margin-right: 2rem;
+                }
+                .sign-up {
+                    margin:0;
+                    width:110px;
+                }
+            }
+        }
+        
+    }
+
+    .footer {
+        .footer-wrapper {
+            flex-direction: row;
+justify-content: space-around;
+
+.icons-connect {
+    
+    
+    h5 {
+      text-align: center;
+            }
+    .icons {
+        flex-direction: row;
+        justify-content: space-around;
+        width:300px;
+    }
+}
+p {
+    margin:0;
+}
+           
+        }
+    }
+}
+
+@media (min-width:1024px) {
+   .header {
+    .nav-logo-wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .menu {
+            width:60%;
+            &-item {
+                margin:0;
+            }
+        }
+
+        .main-logo {
+            margin:0;
+    }
+    }
+   }
+
+   .myModal {
     .modal-content {
-      flex-direction: column;
-      padding: 2rem;
-      width: 60%;
-      justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
 
-      .modal-info {
-        width: 100%;
-        align-items: center;
-        margin: 1rem auto;
-
-        .show-p {
-          font-size: 1.3rem;
-          margin-bottom: 0.5rem;
+        .modal-info {
+        width:60%;
+        margin-left: 3rem;
         }
-
-        h2 {
-          margin-bottom: 0.5rem;
-          font-size: 1.5rem;
-        }
-
-        .hidden {
-          font-size: 1.3rem;
-        }
-      }
-      .spinner-cart-wrapper {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .modal-image {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-      }
     }
-  }
+
+    
+   }
+  
+
+    
 }
-// ================
 
-// Sm Screens
-@media screen and (max-width: 560px) {
-  .header {
-    .menu-btn {
-      display: inline-block;
+@media (min-width:1200px) {
+.nav-logo-wrapper,.hero,.slide,.check,.features {
+    max-width:1600px;
+    margin:0 auto;
+}
+
+    .hero {
+        .hero-container {
+              width:80%;
+              margin:0 auto;
+            .hero-text {
+                h1 {
+                    font-size: 7rem;
+                }
+            }
+        }
     }
-  }
 
-  .nav-logo-wrapper {
-    /* Main Logo */
-    .main_logo {
-      align-items: center;
-
-      h1 {
-        font-size: 2.5rem;
-      }
-    }
-
-    /* Navigation Menu */
-    .nav-menu {
-      width: 100%;
-      display: none;
-
-      .nav-ul {
-        text-align: center;
-
-        li {
-          margin: 0.6rem 0;
-          font-size: 1.6rem;
-
-          .nav-link {
-            width: 35%;
-            display: inline-block;
-          }
+    
+    .slide {
+        .slider-wrapper {
+            .item {  
+                .item-image {
+                    width:150px; 
+            }
         }
-      }
-    }
-  }
-
-  /* Hero Section */
-  .hero {
-    .hero-container {
-      margin: 2rem 0;
-      .lg-text {
-        text-align: center;
-        h1 {
-          font-size: 3.5rem;
-
-          .fa-music {
-            top: 0;
-          }
         }
-      }
+       
+}
 
-      .lg-button-wrapper {
-        margin: 1rem 0;
-      }
-    }
-  }
-
-  // Modal Content
-  .myModal {
-    .modal-content {
-      width: 90%;
-      .modal-info {
-        text-align: center;
-        .nice-number {
-          margin: 0.5rem 0;
-        }
-        .spinner-cart-wrapper {
-          margin: 0 auto;
-        }
-
-        h1 {
-          font-size: 1.5rem;
-        }
-
-        h2 {
-          font-size: 1.6rem;
-        }
-      }
-    }
-  }
-
-  /* Features */
-  .features {
+.features {
     .features-wrapper {
-      grid-template-columns: 1fr;
-      .f-box {
-        flex-direction: column;
-        text-align: center;
-
-        .box-text {
-          margin: 0;
-        }
-
-        h3 {
-          margin-top: 1rem;
-        }
-      }
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
-  }
+}
 
-  /* Subscription Field */
-  .subscription {
-    max-width: 70%;
-    .subscription-wrapper {
-      width: 100%;
+.myModal {
+    .modal-content {
+        max-width:1000px;
     }
-
-    form {
-      flex-direction: column;
-      align-items: center;
-
-      input {
-        width: 100%;
-        margin: 1rem 0;
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  // My cart
-  .modal {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .modal-body {
-    width: 10%;
-  }
-  #my-cart-table {
-    width: 30%;
-  }
+}
+   
 }

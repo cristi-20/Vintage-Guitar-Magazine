@@ -1,15 +1,14 @@
 // Select DOM Items
 const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.nav-menu');
-const menuNav = document.querySelector('.nav-ul');
-const navItems = document.querySelectorAll('.nav-item');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-ul');
+const navItems = document.querySelectorAll('.menu-item');
 
 // Seti Initial State Of Menu
  let showMenu = false;  
 
 menuBtn.addEventListener('click', toggleMenu);
 
-menuNav.addEventListener("focusout",closeMenu);
 
 function closeMenu() {
     menuBtn.classList.remove('close');

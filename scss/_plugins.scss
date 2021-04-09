@@ -1,10 +1,13 @@
 // Zoom effect on Products
+
+
 .xzoom-thumbs img {
   display: inline-block;
   height: 80px;
   width: 80px;
   border: 1px solid #ccc;
-  margin-top: 1rem;
+  margin:1rem auto 0 auto;
+  
 }
 
 .xzoom-preview {
@@ -12,9 +15,8 @@
   margin: 0 auto;
 }
 
-.xzoom-container {
-  margin: 0 auto;
-}
+
+
 
 .xzoom,
 .xzoom2,
@@ -41,46 +43,8 @@
   max-width: 100%;
   height: 300px;
 }
-//   ============
-// Product Number Spinner
-.nice-number {
-  display: inline-flex;
-  justify-content: stretch;
-  margin-right: 1rem;
-  align-items: center;
 
-  button {
-    @include easeOut;
-    color: $myColor;
-    padding: 0.5rem;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    background-color: #ffffff;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $bg_color;
-  }
-}
 
-.nice-number input {
-  vertical-align: middle;
-  -moz-appearance: textfield;
-  box-sizing: content-box;
-  margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  border: none;
-  padding: 0.5rem;
-}
-
-.nice-number input::-webkit-inner-spin-button,
-.nice-number input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-//  =================
 //  Product Modal Box
 /* The Modal (background) */
 .myModal {
@@ -94,28 +58,44 @@
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/
       opacity */
+      
 
   .modal-content {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
+    @include flex;
     border-radius: 5px;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     animation: animatetop 0.45s ease-in-out;
-    width: 70%;
+    width: 85%;
     position: relative;
 
     /* Could be more or less, depending on screen size */
 
     .modal-info {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      @include flex;
+      padding:1rem;
+
+      .add-cart-btn {
+        background-color: $blue;
+        padding: .5rem 2rem;
+        margin: 1rem 0;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $myColor;
+        @include easeOut;
+      
+        &:hover {
+          opacity:0.8;
+        }
+      }
+      
 
       h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: black;
+        text-align: center;
       }
 
       .grey {
@@ -123,21 +103,21 @@
       }
 
       .modal-price {
-        color: $bg_color;
-        margin-top: 0.5rem;
+        color: $blue;
+        margin-top: 1rem 0;
         font-size: 1.8rem;
         letter-spacing: 2px;
         font-weight: bold;
       }
 
       .show-p {
-        color: $myColor;
+        color: $white;
         font-weight: bold;
         padding: 0.5rem;
-        background: $bg_color;
+        background: $blue;
         border-radius: 5px;
-        width: fit-content;
         margin-bottom: 0.6rem;
+        margin-top: 1rem;
       }
 
       .modal-price-wrapper {
@@ -175,30 +155,10 @@
 
 .brands-slider {
   position: relative;
-  .circle {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    right: 0;
-    background: $bg_color;
-    z-index: -1;
-    opacity: 0.4;
-    bottom: 0;
-  }
-
-  .left {
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
-
+  
   .owl-one {
     width: 70%;
-    margin: 2rem auto;
-    position: relative;
+    margin: 4rem auto;
 
     .item {
       display: flex;
@@ -207,8 +167,8 @@
       margin: 0 auto;
 
       img {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
       }
     }
   }
@@ -217,10 +177,12 @@
 // ===============
 // First&second product slider
 .slide {
-  scroll-margin: 190px 0 0 0;
+
   .slider-wrapper {
-    width: 85%;
-    margin: 0 auto;
+    padding:2rem;
+    @include fullWidth;
+  background:$lightBlueBg;
+   
     .owl-carousel .owl-item,
     .owl-stage {
       display: flex;
@@ -231,16 +193,17 @@
       flex-direction: column;
       align-items: center;
       padding: 3rem;
-      width: 80%;
-      background: $bg_color1;
+      max-width: 350px;
+      background: $lightBlack;
       border-radius: 5px;
       margin: 0 auto;
       position: relative;
       cursor: pointer;
+    
 
       &-title {
-        color: $myColor;
-        margin: 4rem 0;
+        color: $white;
+        margin: 6rem 0;
         font-size: 1.2rem;
         font-weight: bold;
         line-height: 1.2;
@@ -248,14 +211,14 @@
 
       .price-stock {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
+        flex-direction: column;
+        width:80%;
         position: absolute;
-        bottom: 15px;
+        bottom: 0;
+        padding:1rem;
 
         .stock {
-          color: $myColor_1;
+          color: $white;
           font-weight: bold;
         }
       }
@@ -263,11 +226,15 @@
       .item-image {
         @include easeOut;
         cursor: pointer;
-        max-width: 60%;
+        max-width: 70%;
         z-index: 1;
 
         &:hover {
           transform: scale(1.3);
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          -o-transform: scale(1.3);
         }
       }
     }
@@ -280,17 +247,37 @@
   top: 0;
   border-radius: 5px;
   height: 100%;
-  background-color: $hover;
+  background-color: $lightBlueBg;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+
+  .quickview {
+    @include easeOut;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $black;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    z-index:10;
+    
+    &:hover {
+      color: $white;
+      background-color: $blue;
+    }
+  }
 }
 
 .overlay {
   visibility: hidden;
 }
 
-.item:hover .overlay {
+.item:hover .overlay  {
   visibility: visible;
   cursor: pointer;
 }
@@ -303,16 +290,21 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%, -50%);
-  right: 100%;
+  -moz-transform: translateY(-50%, -50%);
+  -webkit-transform: translateY(-50%, -50%);
+  right: 98%;
+  margin-right: 1rem;
 }
 
 .fas {
   font-size: 1.5rem;
-  color: $myColor;
+  color: $blue;
 }
+
 .owl-next {
   @extend .owl-prev;
-  left: 100%;
+  left: 98%;
+  margin-left: 1rem;
 }
 
 // Best Sales
@@ -322,29 +314,33 @@
 }
 
 .b-sales-title {
-  width: fit-content;
-  margin: 1rem auto;
-  color: $myColor;
-  font-size: 1.5rem;
+  margin: 1rem auto 1.5rem 1rem;
+  color: $blue;
+  
+  h2 {
+    font-size: 2rem;
+  font-weight: bold;
+  }
+  
 }
 
 // My Cart Styles
-.cart_icon {
+.cart-icon {
   display: flex;
   align-items: center;
 }
+
 .my-cart-icon {
-  color: $myColor_1;
+  color: $blue;
   font-size: 1.5rem;
   cursor: pointer;
   margin: 1rem 0;
 }
 
 .my-cart-badge {
-  color: black;
-  background: $myColor;
+  color: $blue;
+  background: $white;
   font-size: 0.8rem;
-  background: $myColor_1;
   margin-left: 0.5rem;
 }
 

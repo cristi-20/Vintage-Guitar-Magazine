@@ -13,6 +13,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+  <link rel="stylesheet" href="../product landing page/scss/hover-min.css">
+  <link rel="stylesheet" href="../product landing page/scss/hover.css">
+
   <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,26 +30,26 @@
 
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-
-
  <link rel="stylesheet" type="text/css" href="/product landing page/scss/main.css">
  
     <title>Product Landing Page</title>
 
 </head>
 <body>
+    <!-- Start Header -->
+    <main>
    <header class="header">
-       <!-- main logo -->
        <div class="nav-logo-wrapper">
-        <div class="main_logo animate__animated animate__fadeInLeft">
-        <a href="index.html"><h1 class="logo">
+        <div class="main-logo animate__animated animate__fadeInLeft">
+        <a href="index.html">
+    <h1 class="logo">
             Vintage Guitar<span class="rts" >&reg;</span>
-        </h1></a>
-        
-            <h2>
-         magazine 
-         </h2>
+            
+        </h1>
+    </a>
+    <span class="logo-subtitle">magazine</span>
      </div>
+
      <!-- Hamburger Menu -->
 <div class="menu-btn">
     <div class="btn-line">
@@ -57,31 +60,31 @@
     </div>
 </div>
 
-    <!-- navigation mobile menu -->
-    <nav class="nav-menu animate__animated animate__fadeInRight">
-        <ul class="nav-ul">
-            <li class="nav-item">
-            <a class="nav-link  current" href="index.html">
+  
+    <nav class="menu">
+        <ul class="menu-ul">
+            <li class="menu-item">
+            <a class="menu-link hvr-underline-reveal  current" href="index.html">
                 Home
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link"  href="products.html">
+        <li class="menu-item">
+            <a class="menu-link hvr-underline-reveal"  href="products.html">
         Products
             </a>
         </li>
-         <li  class="nav-item">
-             <a class="nav-link" href="about.html">
+         <li  class="menu-item">
+             <a class="menu-link hvr-underline-reveal" href="about.html">
                  About us
              </a>
          </li>
          
-         <li  class="nav-item"><a class="nav-link" href="">
+         <li  class="menu-item"><a class="menu-link hvr-underline-reveal" href="">
         Pricing
          </a></li>
         </ul>
         </nav>
-        <div class="cart_icon">
+        <div class="cart-icon">
         <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
             </span>
             <span class="badge badge-notify my-cart-badge">
@@ -89,18 +92,16 @@
         </div>
         </div>
    </header>
-<!-- Hero Section -->
+   <!-- End Header -->
+
+<!-- Start Hero  -->
    <section class="hero">
-    <div class="hero-circle"></div>
-    <div class="hero-circle left"></div>
          <div class="hero-container">
-        <div class="lg-text">
+        <div class="hero-text">
             <h1>
                 <span class="loud animate__animated animate__tada" > LOUD<i class="fas fa-music"></i></span>
-
                 <span class="clear animate__animated animate__flash">CLEAR<i class="fas fa-music"></i>
                 </span>
-                
                 <br><span class="connected">connected</span>
             </h1>         
         </div>
@@ -142,43 +143,36 @@
             <img class="gibson" src="../product landing page/img/brands/kramer.svg" alt="">
         </div>
     </div>
-    <div class="circle"></div>
-    <div class="circle left"></div>
-
+    
    </section>
 
    <!-- -s2.Product Slider -->
 <section id="product" class="slide">      
     <div class="slider-wrapper">
-    
-<div class="owl-two owl-carousel owl-theme">
-           
+<div class="owl-two owl-carousel owl-theme">    
     <!-- i-sin.Single Cutaway Electro Acoustic Guitar + 15W Amp Pack, Black -->
     <div class="item">
         <div class="overlay">
-            <button class="modal-btn my-cart-btn" href="#modal1" id="settings-modal-btn">Quick View</button>
-        </div>
-        
+            <a class="quickview" href="#modal1" id="settings-quickview">Quick View</a>
+        </div>  
 <img class="item-image" src="../product landing page/product_gallery/img/Single Cutaway Electro Acoustic Guitar/1-remove-bg.png">
 
     <h3 class="item-title">
         Single Cutaway Electro Acoustic Guitar + 15W Amp Pack, Black
     </h3>
-    
     <div class="price-stock">
         <p class="price">
             $129.99
         </p>
         <p class="stock">
-            18 in stock
+            18+ in stock
         </p>
     </div>
     </div>
-
     <!-- i-sch.Schecter BANSHEE-6 SGR Electric Guitar -->
     <div class="item">
         <div class="overlay">
-            <a   class="modal-btn" href="#modal2" id="settings-modal-btn" >Quick View</a>
+            <a class="quickview" href="#modal2" id="settings-modal-btn" >Quick View</a>
         </div>
             <img src="../product landing page/product_gallery/img/Schecter BANSHEE/1-remove-bg.png" class="item-image">
            
@@ -199,7 +193,7 @@
                 <!-- i-iba.Ibanez EHB1505-PLF Headless Bass Guitar -->
     <div class="item">
         <div class="overlay">
-            <a class="modal-btn" href="#modal3" id="settings-modal-btn">Quick View</a>
+            <a class="quickview" href="#modal3" id="settings-modal-btn">Quick View</a>
         </div>
             <img class="item-image" src="../product landing page/product_gallery/img/Ibanez EHB1505-PLF/1-remove-bg.png">
                 <h3 class="item-title">
@@ -220,7 +214,7 @@
      <!-- i-rec.Recording King RM-998-D Guitar Resonator -->
     <div class="item">
         <div class="overlay">
-            <a class="modal-btn" href="#modal4" id="settings-modal-btn">Quick View</a>
+            <a class="quickview" href="#modal4" id="settings-modal-btn">Quick View</a>
         </div> 
             <img class="item-image" src="../product landing page/product_gallery/img/Recording King RM-998-D/1-remove-bg.png">
                 <h3 class="item-title">
@@ -239,7 +233,7 @@
     <!-- -i.Kramer Pacer Vintage, Tiger Stripe -->
     <div class="item">
         <div class="overlay">
-            <a class="modal-btn" href="#modal5" id="settings-modal-btn">Quick View</a>
+            <a class="quickview" href="#modal5" id="settings-modal-btn">Quick View</a>
         </div>
             <img class="item-image" src="../product landing page/product_gallery/img/Kramer Pacer Vintage/1-remove-bg.png">
                 <h3 class="item-title">
@@ -261,7 +255,6 @@ Kramer Pacer Vintage, Tiger Stripe
 </div>
 </div>
 </section>
-
 <!-- Check -->
 <section class="check">
     <div class="check-wrapper">
@@ -319,7 +312,7 @@ Kramer Pacer Vintage, Tiger Stripe
                 <!-- i-red.RedSub Coliseum Fanned -->
         <div class="item">
             <div class="overlay">
-                <button class="modal-btn" href="#modal6" id="settings-modal-btn">Quick View</button>
+                <a class="quickview" href="#modal6" id="settings-modal-btn" >Quick View</a>
             </div>
             <img class="item-image" src="../product landing page/product_gallery/img/5 String bass Red Sub/b-sellers_bass-remove-bg.png" alt="">
             <h3 class="item-title">RedSub Coliseum Fanned Fret 5-String Bass, Blue Burl Burst
@@ -331,7 +324,7 @@ Kramer Pacer Vintage, Tiger Stripe
     <!-- i-thr.Thronmax Dome Plus USB Condenser Microphone -->
         <div class="item">
             <div class="overlay">
-                <button class="modal-btn" href="#modal7" id="settings-modal-btn">Quick View</button>
+                <a class="quickview" href="#modal7" id="settings-modal-btn" >Quick View</a>
             </div>
             
             <img class="item-image" src="../product landing page/product_gallery/img/Thronmax Microphone/sellers_mic-remove-bg.png" alt="">
@@ -347,7 +340,7 @@ Kramer Pacer Vintage, Tiger Stripe
 <!-- i-sub.SubZero Paradigm Baritone Electric Guitar, Black Burl Burst -->
         <div class="item">
             <div class="overlay">
-                <button class="modal-btn" href="#modal8" id="settings-modal-btn">Quick View</button>
+                <a class="quickview" href="#modal8" id="settings-modal-btn" >Quick View</a>
             </div>
             
             <img class="item-image" src="../product landing page/product_gallery/img/SubZero Electric Guitar/b-sellers_guitar-remove-bg.png" alt="">
@@ -363,7 +356,7 @@ Kramer Pacer Vintage, Tiger Stripe
 <!-- i-whd.WHD Orchestral Xylophone with Resonators -->
         <div class="item">
             <div class="overlay">
-                <button class="modal-btn" href="#modal9" id="settings-modal-btn">Quick View</button>
+                <a class="quickview" href="#modal9" id="settings-modal-btn" >Quick View</a>
             </div>
             
             <img class="item-image" src="/product landing page/product_gallery/img/Orchestral Xylophone/b-sellers_xylophone-remove-bg.png" alt="">
@@ -379,7 +372,7 @@ Kramer Pacer Vintage, Tiger Stripe
         <!-- i-sdp.SDP-2 Stage Piano by Gear4music + Complete Pack, White -->
         <div class="item">
             <div class="overlay">
-                <button class="modal-btn" href="#modal10" id="settings-modal-btn">Quick View</button>
+                <a class="quickview" href="#modal10" id="settings-modal-btn">Quick View</a>
             </div>
             
             <img class="item-image" src="../product landing page/product_gallery/img/SDP-2 Stage Piano/b-sellers_piano-remove-bg.png" alt="">
@@ -398,11 +391,11 @@ Kramer Pacer Vintage, Tiger Stripe
     </div>
     </section>
 
-   <!-- Features -->
+   <!-- Start Features -->
    <section class="features">
 <div class="features-wrapper">
       <div class="f-box">
-        <img class="svg-style" src="/SVG/search-dollar-solid.svg" alt="">
+        <img class="svg-style" src="../product landing page/img/search-dollar-solid.svg" alt="">
 <div class="box-text">
 <h3>
 Price Match Guarantee
@@ -414,7 +407,7 @@ Price Match Guarantee
     </div>
 
     <div class="f-box">
-        <img class="svg-style" src="/SVG/shipping-fast-solid.svg" alt="">
+        <img class="svg-style" src="../product landing page/img/shipping-fast-solid.svg" alt="">
 <div class="box-text">
     <h3>
 Shipping Update
@@ -426,7 +419,7 @@ Shipping Update
     </div>
 
     <div class="f-box">
-        <img class="svg-style" src="/SVG/headphones-alt-solid.svg" alt="">
+        <img class="svg-style" src="../product landing page/img/headphones-alt-solid.svg" alt="">
 <div class="box-text">
 <h3>
     Protect Your Investment
@@ -437,7 +430,7 @@ Shipping Update
 </div>
     </div>
     <div class="f-box">
-        <img class="svg-style" src="/SVG/guitar-solid.svg" alt="">
+        <img class="svg-style" src="../product landing page/img/guitar-solid.svg" alt="">
 <div class="box-text">
     <h3>
         Used Gear Collection
@@ -450,36 +443,39 @@ Shipping Update
 </div>
 </section>
 
-<!-- Subscription Field -->
+<!-- Start Subscription Field -->
 <section class="subscription">
 <div class="subscription-wrapper">
     <h3>
         Be the first to know about exclusive offers, tips and more.
     </h3>
     
-    <form>
+    <form class="form">
         <input id="email" type="email" placeholder="Enter your email here">
         <button class="sign-up">Sign Up</button>
     </form>
 
     </div>
 </section>
+<!-- End subscription -->
 
-<!-- Footer -->
-<footer>
+<!-- Start Footer -->
+<footer class="footer">
     <div class="footer-wrapper">
-
+        <div class="icons-connect">
+        <h5>Connect with us</h5>
         <div class="icons">
-            <h5>Connect with us</h5>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-twitter-square"></i>
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-instagram"></i>
         </div>
+    </div>
         <p>
             Copyright &copy; 2021
         </p>
     </div>
+   
 </footer>
 <!-- ======= MODALS ======== -->
 <!--  -m.sin. Single Electro Acoustic Guitar -->
@@ -519,7 +515,7 @@ Shipping Update
         </h2>
         <div class="modal-price-wrapper">   
     <div class="spinner-cart-wrapper">
-                <input type="number">
+               
         <button class="add-cart-btn my-cart-btn" data-id="1" data-name="Single Cutaway Electro Acoustic Guitar + 15W Amp Pack, Black" data-summary="summary 1" data-price="129.99" data-quantity="1" data-image="../product landing page/product_gallery/img/Single Cutaway Electro Acoustic Guitar/1-remove-bg.png" >
             Add to cart
         </button>
@@ -569,7 +565,7 @@ Shipping Update
             </h2>
             <div class="modal-price-wrapper">       
         <div class="spinner-cart-wrapper">
-                    <input type="number">  
+                      
             <button class="add-cart-btn my-cart-btn" data-id="2" data-name="Schecter BANSHEE-6 SGR Electric Guitar" data-summary="summary 1" data-price="137.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Schecter BANSHEE/1-remove-bg.png">
                 Add to cart
             </button>
@@ -615,7 +611,7 @@ Shipping Update
         </h2>
         <div class="modal-price-wrapper">       
     <div class="spinner-cart-wrapper">
-                <input type="number">
+               
                 
         <button class="add-cart-btn my-cart-btn" data-id="3" data-name="Ibanez EHB1505MS-TSF
         " data-summary="chitara bass" data-price="311.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Ibanez EHB1505-PLF/1-remove-bg.png" >
@@ -663,7 +659,7 @@ Shipping Update
         </h2>
         <div class="modal-price-wrapper">
     <div class="spinner-cart-wrapper">
-                <input type="number">    
+                  
         <button class="add-cart-btn my-cart-btn" data-id="4" data-name="Recording King RM-998-D Guitar Resonator
         " data-summary="summary 1" data-price="691.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Recording King RM-998-D/1-remove-bg.png" >
             Add to cart
@@ -709,7 +705,7 @@ Kramer Pacer Vintage, Tiger Stripe
         </h2>
         <div class="modal-price-wrapper">  
     <div class="spinner-cart-wrapper">
-                <input type="number">
+               
         <button class="add-cart-btn my-cart-btn" data-id="5" data-name="Kramer Pacer Vintage, Tiger Stripe
         " data-summary="summary 1" data-price="699.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Kramer Pacer Vintage/1-remove-bg.png" >
             Add to cart
@@ -761,7 +757,7 @@ Kramer Pacer Vintage, Tiger Stripe
             </h2>
             <div class="modal-price-wrapper">  
         <div class="spinner-cart-wrapper">
-                    <input type="number">
+                 
             <button class="add-cart-btn my-cart-btn" data-id="6" data-name="RedSub Coliseum Fanned Fret 5-String Bass, Blue Burl Burst" data-summary="summary 1" data-price=" 369.50" data-quantity="1" data-image="../product landing page/product_gallery/img/5 String bass Red Sub/b-sellers_bass-remove-bg.png">
                 Add to cart
             </button>
@@ -810,7 +806,7 @@ Kramer Pacer Vintage, Tiger Stripe
         </h2>
         <div class="modal-price-wrapper">  
     <div class="spinner-cart-wrapper">
-                <input type="number">
+              
         <button class="add-cart-btn my-cart-btn" data-id="7" data-name="Thronmax Dome Plus USB Condenser Microphone" data-summary="summary 1" data-price="75.00" data-quantity="1" data-image="../product landing page/product_gallery/img/Thronmax Microphone/sellers_mic-remove-bg.png">
             Add to cart
         </button>
@@ -859,7 +855,7 @@ Kramer Pacer Vintage, Tiger Stripe
         </h2>
         <div class="modal-price-wrapper">  
     <div class="spinner-cart-wrapper">
-                <input type="number">
+                
         <button class="add-cart-btn my-cart-btn" data-id="8" data-name="SubZero Paradigm Baritone Electric Guitar, Black Burl Burst" data-summary="summary 1" data-price="311.50" data-quantity="1" data-image="../product landing page/product_gallery/img/SubZero Electric Guitar/b-sellers_guitar-remove-bg.png">
             Add to cart
         </button>
@@ -911,7 +907,7 @@ Kramer Pacer Vintage, Tiger Stripe
         </h2>
         <div class="modal-price-wrapper">  
     <div class="spinner-cart-wrapper">
-                <input type="number">
+               
         <button class="add-cart-btn my-cart-btn" data-id="9" data-name="WHD Orchestral Xylophone with Resonators" data-summary="summary 1" data-price="346.50" data-quantity="1" data-image="../product landing page/product_gallery/img/Orchestral Xylophone/b-sellers_xylophone-remove-bg.png">
             Add to cart
         </button>
@@ -966,7 +962,6 @@ Kramer Pacer Vintage, Tiger Stripe
         </h2>
         <div class="modal-price-wrapper">  
     <div class="spinner-cart-wrapper">
-                <input type="number">
         <button class="add-cart-btn my-cart-btn" data-id="10" data-name="SDP-2 Stage Piano by Gear4music + Complete Pack, White" data-summary="summary 1" data-price="346.50" data-quantity="1" data-image="../product landing page/product_gallery/img/SDP-2 Stage Piano/b-sellers_piano-remove-bg.png">
             Add to cart
         </button>
@@ -980,6 +975,7 @@ Kramer Pacer Vintage, Tiger Stripe
     <span class="close">&times;</span>
         </div>     
     </div>
+</main>
 <!-- ======= MODALS END ======== -->
 
 
@@ -1008,11 +1004,8 @@ Kramer Pacer Vintage, Tiger Stripe
 <script type="text/javascript" src="../product landing page/product_gallery/zoom.js"></script>
 <script type="text/javascript" src="../product landing page/product_gallery/script.js"></script>
 
-<!-- Number Spinner -->
-<script type="text/javascript" src="../product landing page/JS&Jquery/number spinner/jquery.nice-number.js">
-</script>
-<script type="text/javascript" src="../product landing page/JS&Jquery/number spinner/jquery-number.js">
-</script>
+
+
 
 </body>
 

@@ -10,128 +10,132 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: repeating-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.07),
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0.02),
-      rgba(0, 0, 0, 0.03),
-      transparent,
-      rgba(0, 0, 0, 0.03),
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0.04),
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.04),
-      rgba(0, 0, 0, 0.08),
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0.1) 4px
-    ),
-    linear-gradient(45deg, rgb(189, 40, 144), rgb(18, 10, 138));
+  background:#ffffff;
+}
+
+
+.price {
+  font-size: 1.5rem;
+  color: $white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
 }
 
 /* 
-navigation menu  
+start navigation  
 */
 .header {
-  .menu-btn {
-    display: none;
-  }
-
   .nav-logo-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    background: $bg_color1;
-    position: relative;
-    .main_logo {
-      position: relative;
-
+    padding:.7rem;
+    width:100%;
+    
+    .main-logo {
+      margin:3rem 0;
+      display:flex;
+      flex-direction: column;
+      width:fit-content;
+      
       h1 {
         font-style: italic;
         font-weight: bold;
-        color: $myColor;
-        font-size: 2.7rem;
-        margin-bottom: 2rem;
-
+        color: $blue;
+        font-size: 2.3rem;
+        margin-bottom: 1.8rem;
+        line-height: 0.7;
+        position:relative;
+      
+        
         // Registered trademark symbol
         .rts {
           font-size: 1rem;
           position: absolute;
-          bottom: 60px;
+          top:-10px;
         }
       }
 
-      h2 {
-        color: $myColor_1;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-size: 1.2rem;
-        letter-spacing: 0.6rem;
+      .logo-subtitle {
+        color: $blue;
+        font-size: 1rem;
+        letter-spacing: 0.4rem;
         font-style: italic;
+        margin:0;
+        position:absolute;
+        bottom:0;
+        left:120px;
       }
     }
   }
 }
-/* Hero Section */
+// End header
+
+/* Start Hero  */
 .hero {
   position: relative;
-
-  .hero-circle {
+  // Creates background circles
+  &:after {
+    content:'';
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 100px;
     left: 20px;
-    background: $bg_color;
+    background: $lightBlue
+    ;
     z-index: -1;
     opacity: 0.2;
+    top:100px;
   }
-
-  .left {
+  &:before {
+    @extend:after;
     width: 100px;
     height: 100px;
-    bottom: 100px;
-    left: 50%;
-    border-radius: 50px;
   }
+
 
   .hero-container {
     padding: 2rem;
     margin: 6rem 0;
-    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    
 
-    .lg-text {
+    .hero-text {
       h1 {
-        color: $myColor;
+        color: $blue;
         line-height: 1.3;
         font-family: $myFont;
-        font-size: 8rem;
+        font-size: 3.4rem;
         text-transform: uppercase;
         transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        
 
         .loud {
+          margin-right: .5rem;
           &:hover {
             animation-name: tada;
             animation-iteration-count: infinite;
             cursor: pointer;
+            
           }
         }
 
         .fa-music {
           position: absolute;
-          top: 0;
+          top: -12px;
+          color:$blue;
         }
 
         .clear {
-          color: $myColor_1;
+          
           @include easeOut;
-
           &:hover {
-            color: deepskyblue;
+            color: $lightBlue;
             animation: move 1s ease-in-out;
             cursor: pointer;
           }
@@ -141,7 +145,7 @@ navigation menu
         .connected {
           position: relative;
           text-decoration: none;
-          padding: 0.5rem;
+          padding: 0.6rem;
           text-align: center;
           cursor: pointer;
 
@@ -170,16 +174,9 @@ navigation menu
     }
   }
 }
+// End Hero
 
-// Image Gallery
-
-#gal1 {
-  #img_01 {
-    width: 70px;
-  }
-}
-
-/* Check Items */
+/* Start Check Items */
 .check {
   .check-wrapper {
     display: grid;
@@ -196,14 +193,16 @@ navigation menu
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0.5rem 0;
+     
 
       p {
         line-height: 1.4;
+        color:$blue;
+        font-weight: bold;
       }
 
       .fas {
-        color: $myColor_1;
+        color: $blue;
         font-size: 1.5rem;
         margin-right: 1rem;
       }
@@ -212,7 +211,7 @@ navigation menu
     // Creates border top&bottom
     &:after {
       content: "";
-      border-bottom: 1px solid $myColor_1;
+      border-bottom: 1px solid $blue;
       position: absolute;
       bottom: 0;
     }
@@ -220,122 +219,138 @@ navigation menu
     &:after {
       content: "";
       width: 100%;
-      border-top: 1px solid $myColor_1;
+      border-top: 1px solid $blue;
       position: absolute;
       top: 0;
     }
   }
 }
 
-/* Features */
+/* Start Features */
 .features {
   .features-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-content: center;
     grid-template-rows: 1fr 1fr;
-    padding: 3rem;
     column-gap: 2rem;
-    row-gap: 2rem;
-    width: 85%;
+    row-gap: 3rem;
+    width: 80%;
     color: $myColor;
     margin: 5rem auto;
 
     .f-box {
-      background-color: $bg_color1;
+      background-color: $blue;
       padding: 2rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      text-align: center;
       line-height: 1.3;
       font-size: 1.2rem;
+      border-radius:5px;
 
       .box-text {
-        margin-left: 2rem;
-
         h3 {
-          margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
           color: $myColor_1;
+          font-weight: bold;
         }
       }
+
       .svg-style {
-        width: 70px;
+        width: 70px; 
       }
     }
   }
 }
+// End Features
 
-// Best Sales & Product Slider Price Styles
-.price {
-  font-size: 1.5rem;
-  color: $myColor_1;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-}
-
-/* Subscription Field */
-
+/* Start Subscription Field */
 .subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 50%;
   margin: 5rem auto;
+  .subscription-wrapper {
+    @include flex;
 
-  h3 {
-    color: $myColor;
-    font-size: 1.5rem;
+    h3 {
+      color: $myColor;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .form {
+      @include flex;
+      margin: 1rem 0;
+      width:90%;
+  
+      input {
+        font-size: 1rem;
+        padding: 0.7rem;
+        width:90%;
+      }
+  }  
   }
 
-  form {
-    display: flex;
-    margin: 1rem 0;
-
-    input {
-      width: 70%;
-      font-size: 1rem;
-      padding: 0.7rem;
+  .sign-up {
+    border-radius: 5px;
+    background-color: $blue;
+    color: $white;
+    padding: 0.5rem 0;
+    width: 90%;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    @include easeOut;
+    &:hover {
+      opacity:0.9;
     }
   }
 }
 
 // Footer
-footer {
+.footer {
   margin-top: auto;
   .footer-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: $bg_color1;
+    @include flex;
+    background: $blue;
     padding: 1.5rem;
 
-    p {
-      color: $myColor;
-      font-size: 1.1rem;
-      letter-spacing: 1px;
+    h5,p {
+      font-size: 1.2rem;
+      color:$white;
       font-weight: bold;
+      letter-spacing: 1px;
     }
+     
 
     .icons {
-      font-size: 2.2rem;
+      font-size: 2rem;
       text-align: center;
+      display:flex;
+      justify-content: space-around;
+      width:100%;
+      margin:1rem 0;
 
       h5 {
-        margin: 0 0 0.5rem 1rem;
-        color: $myColor;
+        font-size: 1.2rem;
+        color: $white;
       }
 
       .fab {
-        margin-left: 1rem;
-        color: $myColor;
+        color: $white;
         @include easeOut;
         &:hover {
           cursor: pointer;
           transform: scale(1.2);
-          color: $myColor_1;
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          color: $lightBlue;
         }
       }
     }
   }
 }
+
+
 
 @import "mobile";

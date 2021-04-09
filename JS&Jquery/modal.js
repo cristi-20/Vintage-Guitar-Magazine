@@ -3,7 +3,7 @@
 
 
 let modals = document.getElementsByClassName('modal');
-let modalBtns = document.getElementsByClassName('modal-btn');
+let modalBtns = document.getElementsByClassName('quickview');
 let closeBtns = document.getElementsByClassName('close');
 
 for(let modalBtn of modalBtns) {
